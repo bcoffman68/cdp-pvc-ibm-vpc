@@ -33,11 +33,11 @@ ssh root@<public_ip>
 curl -sSL https://raw.githubusercontent.com/bcoffman68/cdp-pvc-ibm-vpc/setup_ibm.sh | sudo -E sh
 ```
 
-*Continue to the 'Use' section below
+Continue to the 'Use' section below
 
 
 ### Execute Installation with WWBank Demo
-####Setup Block storage as ext4 which is used for /kudu
+Setup Block storage as ext4 which is used for /kudu
 
 Display the partitions and file system type
 ```
