@@ -9,12 +9,13 @@ Install CDP Private Cloud Base on an IBM Cloud Virtual Server Instance either wi
 ## Virtual Server Setup
 -----------------------
 
+  ```
 Virtual Server Instance Configuration:
 Size:             8 vCPU | 64 GB Ram | 16 Gbps
 Image:            CentOS 7.x - Minimal Install (amd64)
 Boot Storage:     100 GB | 3000 Max IOPS | 46.88 MiBps
 *Block Storage:   100 GB | 3000 Max IOPS | 46.88 MiBps
-
+  ```
 *Block Storage is only needed for kudu
 
 
