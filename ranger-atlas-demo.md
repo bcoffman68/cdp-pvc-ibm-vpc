@@ -7,35 +7,30 @@ Demo overview can be found [here](https://community.hortonworks.com/articles/151
 ## Versions tested
 
 Tested with:
-- [x] CDP 7.0.3 / CM 7.0.3
-- [x] HDP 3.1.0 / Ambari 2.7.3.0
-- [x] HDP 3.0.1 / Ambari 2.7.1.0
-- [x] HDP 3.0.0 / Ambari 2.7.0.0
+- [x] CDP 7.1.4 / CM 7.1.4
 
 
-## Fresh install of CDP-DC plus Worldwide demo
+## Fresh install of CDP Private Cloud Base + Worldwide demo
+https://github.com/bcoffman68/cdp-pvc-ibm-vpc
 
 - Pre-reqs:
   - Launch a single vanilla Centos/RHEL 7.x VM (e.g. on local VM or openstack or cloud provider of choice) 
   - The VM should not already have any Cloudera/Hortonworks components installed (e.g. do NOT run script on HDP sandbox)
   - The VM requires 16 vcpus and ~64 GB RAM once all services are running and you execute a query, so m4.4xlarge size is recommended
   
-- Login as root, (optionally [override any parameters](https://github.com/abajwa-hw/masterclass/blob/master/ranger-atlas/setup-dc-703.sh#L4-L18)) and run setup.sh as below:
+- Login as root
+```
+ssh root@<public_ip_address>
+```
+
+- Execute installation
 ```
 yum install -y git 
 #setup KDC 
-curl -sSL https://gist.github.com/abajwa-hw/bca3d23fe146c3ebd59a9b5fd19480a3/raw | sudo -E sh
-
-#install single node CDP-DC cluster
-git clone https://github.com/fabiog1901/SingleNodeCDPCluster.git
-cd SingleNodeCDPCluster
-./setup_krb.sh gcp templates/wwbank_krb.json
-
-#setup demo on cluster
-curl -sSL https://raw.githubusercontent.com/abajwa-hw/masterclass/master/ranger-atlas/setup-dc-703.sh | sudo -E bash
+curl -sSL https://raw.githubusercontent.com/bcoffman68/cdp-pvc-ibm-vpc/setup_ibm.sh | sudo -E sh
 ```
 
-- This will run for about 35min and install CDP-DC 7.0.3 cluster with the Ranger/Atlas demo installed
+- This will run for about 1hr and install CDP-PvC 7.1.4 cluster with the Ranger/Atlas demo installed
 
 
 
