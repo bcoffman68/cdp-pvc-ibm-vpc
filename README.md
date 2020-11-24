@@ -78,5 +78,31 @@ curl -sSL https://raw.githubusercontent.com/bcoffman68/cdp-pvc-ibm-vpc/setup_ibm
 ## Use
 Wait until the script finishes, check for any error.
 
-Once the script returns, you can open Cloudera Manager at [http://\<public-IP\>:7180](http://<public-IP>:7180)
+Once the script returns, you can open 
+
+Cloudera Manager:
+[http://\<public-IP\>:7180](http://<public-IP>:7180)
+u - admin
+p - admin
+
+Ranger:
+[http://\<public-IP\>:6080/](http://<public-IP>:6080)
+u - admin
+p - BadPass#1
+
+Atlas:
+[http://\<public-IP\>:31000/](http://<public-IP>:31000)
+u - admin
+p - BadPass#1
+
+Zepplin:
+[http://\<public-IP\>:8885/](http://<public-IP>:8885)
+u - joe_analyst, ivanna_eu_hr, etl_user
+p - BadPass#1
+
+Hue:
+[http://\<public-IP\>:8889/](http://<public-IP>:8889)
+u - joe_analyst, ivanna_eu_hr, etl_user
+p - BadPass#1
+
 
