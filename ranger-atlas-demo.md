@@ -50,7 +50,7 @@ curl -sSL https://raw.githubusercontent.com/bcoffman68/cdp-pvc-ibm-vpc/setup_ibm
 
   ## Demo walkthrough
   
-  - CDP walthrough avaiable on Cloudera partner portal [here](https://my.cloudera.com/partner-portal/training/demo-center.html)
+  - CDP walthrough available on Cloudera partner portal [here](https://my.cloudera.com/partner-portal/training/demo-center.html)
   - Older HDP walkthrough of demo steps available [here](https://community.hortonworks.com/articles/151939/hdp-securitygovernance-demo-kit.html)
 
   ## Other things to try
