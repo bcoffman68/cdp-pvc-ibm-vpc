@@ -30,7 +30,7 @@ ssh root@<public_ip>
 
 ### Execute Installation without WWBank Demo
 ```
-curl -sSL https://raw.githubusercontent.com/bcoffman68/cdp-pvc-ibm-vpc/setup_ibm.sh | sudo -E sh
+curl -sSL https://raw.githubusercontent.com/bcoffman68/cdp-pvc-ibm-vpc/main/setup_ibm.sh | sudo -E sh
 ```
 
 Continue to the 'Use' section below
@@ -71,7 +71,7 @@ lsblk -fs
 
 ### Execute Installation Script
 ```
-curl -sSL https://raw.githubusercontent.com/bcoffman68/cdp-pvc-ibm-vpc/setup_ibm_wwbank.sh | sudo -E sh
+curl -sSL https://raw.githubusercontent.com/bcoffman68/cdp-pvc-ibm-vpc/main/setup_ibm_wwbank.sh | sudo -E sh
 ```
 
 ====================================================
